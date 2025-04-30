@@ -1,7 +1,25 @@
-*/*/bin
-*/bin
-bin/
+# Virtual environments (common names)
+venv/
+env/
+.venv/
+.env/
 
-*/*/__pycache__
-*/__pycache__
+# Also ignore virtual environments in subdirectories
+**/venv/
+**/env/
+**/.venv/
+**/.env/
+
+# VS Code settings
+.vscode/
+**/.vscode/
+
+# Python bytecode and cache
 __pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Binary/build folders
+bin/
+**/bin/

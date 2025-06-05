@@ -30,8 +30,8 @@ def include_font(build_setup: BuildSetup, font_name: str):
         return
 
     include_path = get_directory_path(__file__) + "/data/include/"
-    header_path = include_path + font_name + ".hpp"
-    cpp_path = include_path + font_name + ".cpp"
+    header_path = include_path + font_name.replace(" ", "_") + ".hpp"
+    cpp_path = include_path + font_name.replace(" ", "_") + ".cpp"
 
     os.makedirs(include_path, exist_ok=True)
 
